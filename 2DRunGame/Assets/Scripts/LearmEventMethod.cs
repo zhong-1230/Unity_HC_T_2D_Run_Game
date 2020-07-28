@@ -97,3 +97,6 @@ public class LearmEventMethod : MonoBehaviour
         print("開車音效：" + sound);
 
     }
+
+
+}
