@@ -46,7 +46,9 @@ public class player : MonoBehaviour
     /// </summary>
     private void Jump()
     {
-
+        // 動畫控制器.設定布林值("參數名稱",布林值)
+        // true
+        ani.SetBool("跳躍開關", true);
     }
     /// <summary>
     /// 吃金幣
@@ -88,7 +90,7 @@ public class player : MonoBehaviour
 
     private void Update()
     {
-        
+        Jump();
     }
     #endregion
 }

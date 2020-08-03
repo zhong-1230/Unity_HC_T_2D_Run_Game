@@ -501,6 +501,8 @@ MonoBehaviour:
   sphere: {fileID: 138931479}
   tra: {fileID: 138931483}
   cube: {fileID: 577757338}
+  myLight: {fileID: 711616751}
+  cam: {fileID: 1048694169}
 --- !u!1 &711616750
 GameObject:
   m_ObjectHideFlags: 0
