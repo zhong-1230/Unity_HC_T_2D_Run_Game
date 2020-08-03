@@ -38,7 +38,21 @@ public class player : MonoBehaviour
     /// </summary>
     private void Slide()
     {
+        bool ctrl = Input.GetKey(KeyCode.LeftControl);
+        ani.SetBool("滑行開關", ctrl);
 
+        // 如果 按下 ctrl
+        // 站立 -0.1 -0.4 1.35 36
+        // 否則
+        // 滑行 -0.1  -1.5 1.35  1.1
+        if (ctrl)
+        {
+            print("滑行");
+        }
+        else
+        {
+            print("站立");
+        }
     }
 
     /// <summary>
@@ -47,8 +61,9 @@ public class player : MonoBehaviour
     private void Jump()
     {
         // 動畫控制器.設定布林值("參數名稱",布林值)
-        // true
-        ani.SetBool("跳躍開關", true);
+        // true 玩家是否按下空白鍵
+        bool space = Input.GetKeyDown(KeyCode.Space);
+        ani.SetBool("跳躍開關", space);
     }
     /// <summary>
     /// 吃金幣
@@ -91,6 +106,7 @@ public class player : MonoBehaviour
     private void Update()
     {
         Jump();
+        Slide();
     }
     #endregion
 }
