@@ -90,7 +90,7 @@ public class player : MonoBehaviour
 
         // 2D 射線碰撞物件 = 2D 物理.射線碰撞(起點，方向，長度，圖層)
         // 圖層語法：1 << 圖層編號
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(-0.07f, -1.1f), -transform.up, 0.05f, 1 << 8);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(-0.25f, -1.1f), -transform.up, 0.05f, 1 << 8);
 
         if (hit)
         {
@@ -134,7 +134,7 @@ public class player : MonoBehaviour
     private void Hit(GameObject obj)
     {
         // 扣血 hp -= 10
-        hp -= 99999;
+        hp -= 30;
         // 播放音效
         and.PlayOneShot(soundHit);
         // 刪除障礙物
@@ -221,7 +221,7 @@ public class player : MonoBehaviour
         // transform.right 此物件右方   X  預設為1
         // transform.forward 此物件前方 Z  預設為1
 
-        Gizmos.DrawRay(transform.position + new Vector3(-0.07f, -1.1f), -transform.up * 0.05f);
+        Gizmos.DrawRay(transform.position + new Vector3(-0.25f, -1.1f), -transform.up * 0.05f);
     }
     #endregion
 }

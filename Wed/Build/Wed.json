@@ -1,13 +1,16 @@
 {
 "companyName": "zhong",
 "productName": "zhong_跑吧~貓咪!",
+"productVersion": "0.1",
 "dataUrl": "Wed.data.unityweb",
 "wasmCodeUrl": "Wed.wasm.code.unityweb",
 "wasmFrameworkUrl": "Wed.wasm.framework.unityweb",
-"TOTAL_MEMORY": 268435456,
-"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
 "backgroundColor": "#231F20",
-"cacheControl": {"default": "must-revalidate"}
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.3f1"
 }
