@@ -12528,7 +12528,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.76
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12541,7 +12541,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -13601,6 +13601,11 @@ PrefabInstance:
     - target: {fileID: 7943975591258031970, guid: 6b95c3eb66bf6ed4caf10832bdbf3b4a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943975591258031971, guid: 6b95c3eb66bf6ed4caf10832bdbf3b4a,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7943975591258031973, guid: 6b95c3eb66bf6ed4caf10832bdbf3b4a,
